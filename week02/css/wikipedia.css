@@ -3,5 +3,10 @@ div{
     font-weight:bold;
 }
 img{
-    
+    width:150px;
+    height:100px;
+    margin:30px;
+}
+table{
+    background-color: gray ;
 }
