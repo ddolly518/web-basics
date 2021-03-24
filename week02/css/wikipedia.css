@@ -1,4 +1,4 @@
-div{
+.sungshin{
     text-align:left;
     font-weight:bold;
 }
@@ -6,4 +6,9 @@ img{
     width:150px;
     height:100px;
     margin:30px;
+}
+/*설명글*/
+iframe{
+    width:1000px;
+    height:500px;
 }
