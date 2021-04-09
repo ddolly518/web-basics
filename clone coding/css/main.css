@@ -1,0 +1,222 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+/* Hamburger menu */
+header .header-primary {
+    background-color: #0B9BC9;
+    width: 100%;
+    height: 60px;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+header .header-secondary {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.material-icons {
+    color: #FFFFFF;;
+    font-size: 32px;
+    cursor: pointer;
+    position: absolute;
+}
+.material-icons#btn-open {
+    display: block;
+}
+.material-icons#btn-close {
+    display: none;
+}
+nav {
+    position: absolute;
+    top: 120px;
+    width: 300px;
+    height: calc(100vh - 60px);
+    background-color:#0B9BC9;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+header .header-secondary .corona span {
+    font-size: 18px;
+    color:black;
+}
+header .header-secondary .corona {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+header .header-primary .shim {
+    padding: 9px 0;
+    margin-left: 50px;
+    font-size: 18px;
+}
+header .header-primary .shim a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px 15px;
+    margin-left: 50px;
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+}
+header .header-primary .shim li {
+    float: left;
+    width: 260px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-primary .shim li:first-child {
+    width: 225px;
+    height: 40px;
+}
+header .header-primary .shim img {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+header .header-primary .sns {
+    position: absolute;
+    right: 266px;
+}
+header .header-primary .sns li {
+    float:left;
+}
+header .header-primary .sns img {
+    border-radius: 50%;
+    margin: 0 4px;
+    width: 24px;
+    height: 24px;
+}
+header .header-primary .country {
+    position: absolute;
+    right: 402px;
+}
+header .header-primary .country li {
+    float: left;
+    padding: 0 5px;
+    font-size: 13px;
+}
+header .header-primary .country a {
+    text-decoration: none;
+    color: #444444;
+}
+header .header-primary .search {
+    right: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+header .header-primary .search input {
+    border: 1px solid #FFFFFF;
+    padding: 4px 10px;
+    margin: 0px 36px 0px 0px;
+    width: 210px;
+    height: 36px;
+    box-sizing: border-box;
+}
+header .header-primary .search .material-icons {
+    right: 2px;
+    padding: 0 3px;
+    background-color: #0B7599;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    color: white;
+}
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+.btn-scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    width: 40px;
+    right: calc((100% - 1100px)/2 - 100px);
+    cursor: pointer;
+    animation: float 6s ease infinite;
+}
+footer {
+    background-color: white;
+    width: 100%;
+    height: 166px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-top: 3px solid #333;
+}
+footer .footer-secondary {
+    position: relative;
+}
+footer .footer-secondary ul.main {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+}
+footer .footer-secondary ul.main li.item {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+footer .footer-secondary ul.main li.item .item-title {
+    display: flex;
+    padding: 0 18px;
+    height: 55px;
+    align-items: center;
+    margin: auto;
+    transition: .4s;
+    cursor: pointer;
+    border-right: 1px solid black;
+}
+footer .footer-secondary ul.main li.item .item-title:hover {
+    background-color: black;
+    color: white;
+    transition: .4s;
+}
+footer .footer-secondary ul.main li.item .item-title .item-name {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.0;
+}
+footer .footer-secondary ul.main li.item .item-title .material-icons {
+    font-size: 24px;
+    padding-left: 5px;
+}
+footer .footer-secondary ul.main li.item .item-contents {
+    position: absolute;
+    bottom: 55px;
+    color: black;
+    background-color: white;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    box-sizing: border-box;
+    display: none;
+}
+footer .footer-secondary ul.main li.item .item-contents>ul li {
+    padding: 5px 12.5px;
+    transition: .4s;
+    border-bottom: 1px solid black;
+}
+footer .footer-secondary ul.main li.item .item-contents>ul li:hover {
+    padding: 5px 25px;
+    transition: .4s;
+    background: red;
+    color: blue;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 문자 인코딩 설정 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 렌더링 방식 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 페이지 제목 설정 -->
+    <title>코로나바이러스감염증-19(COVID-19)</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 기본 스타일을 초기화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- Google material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--main.css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- main.js -->
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="wrapper">
+            <!-- 헤더 두번째 섹션 -->
+            <div class="header-secondary">
+                <a href="/" class="corona">코로나바이러스감염증-19<span>(COVID-19)</span></a>
+            </div>
+            <!-- 헤더 첫번째 섹션 -->
+            <div class="header-primary">
+                <!-- Hamburger menu -->
+                <!-- 여는 아이콘 -->
+                <div id="btn-open" class="material-icons">
+                    menu
+                </div>
+                <!-- 닫는 아이콘 -->
+                <div id="btn-close" class="material-icons">
+                    close
+                </div>
+                <ul class="shim">
+                    <li><a href="https://ncv.kdca.go.kr/" target="_blank">코로나19백신 및 예방접종</a></li>
+                    <li><a href="http://www.mohw.go.kr/react/index.jsp" target="_blank"><img src="./images/shim.png">중앙사고수습본부</a></li>
+                    <li><a href="http://www.kdca.go.kr/index.es?sid=a2" target="_blank"><img src="./images/shim.png">중앙방역대책본부</a></li>
+                </ul>
+                <ul class="sns">
+                    <li><a href="https://www.facebook.com/koreadca" target="_blank"><img src="./images/sns_icon_face.png"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank"><img src="./images/sns_icon_you.png"></a></li>
+                    <li><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank"><img src="./images/sns_icon_naver.png"></a></li>
+                    <li><a href="https://twitter.com/koreadca" target="_blank"><img src="./images/sns_icon_tw.png"></a></li>
+                </ul>
+                <ul class="country">
+                    <li><a href="http://ncov.mohw.go.kr/en/" target="_blank">English</a></li>
+                    <li><a href="http://ncov.mohw.go.kr/cn/" target="_blank">China</a></li>
+                </ul>
+                <div class="search">
+                    <input placeholder="검색어를 입력하세요.">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </div>
+            </div>
+    </header>
+    <div class="content">
+        <nav id="side-menu"></nav>
+            <!-- SCROLL TO TOP -->
+            <img class="btn-scrollToTop" onclick="scrollToTop()" src="./images/scroll.PNG" alt="화살표">
+    </div>
+    <footer>
+        <div class="footer-secondary">
+            <ul class="main">
+                <li class="item">
+                    <div class="item-title">
+                        <div class="item-name">질병관리청 관련기관 바로가기</div>
+                        <span class="material-icons">
+                            keyboard_arrow_up
+                        </span>
+                    </div>
+                    <div class="item-contents">
+                        <ul>
+                            <li>질병관리청</li>
+                            <li>미국질병통제예방센터[CDC]</li>
+                            <li>유럽질병통제예방센터[ECDC]</li>
+                            <li>세계보건기구[WHO]</li>
+                            <li>일본감염병연구소[NIID]</li>
+                            <li>영국공공보건국[PHE]</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-title">
+                        <div class="item-name">보건환경연구원 바로가기</div>
+                        <span class="material-icons">
+                            keyboard_arrow_up
+                        </span>
+                    </div>
+                    <div class="item-contents">
+                        <ul>
+                            <li>서울특별시 보건환경연구원</li>
+                            <li>부산광역시 보건환경연구원</li>
+                            <li>대구광역시 보건환경연구원</li>
+                            <li>인천광역시 보건환경연구원</li>
+                            <li>광주광역시 보건환경연구원</li>
+                            <li>대전광역시 보건환경연구원</li>
+                            <li>울산광역시 보건환경연구원</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="item-title">
+                        <div class="item-name">관련기관 바로가기</div>
+                        <span class="material-icons">
+                            keyboard_arrow_up
+                        </span>
+                    </div>
+                    <div class="item-contents">
+                        <ul>
+                            <li>통계청 코로나19</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-primary"></div>
+    </footer>
+    
+</body>
+</html>
