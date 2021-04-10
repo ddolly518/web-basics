@@ -49,6 +49,7 @@ menuCloseEl.addEventListener("click", function() {
 //         coronaEl.style.width = '300px'
 //     }
 // })
+
 // SCROLL TO TOP
 const scrollToTop = () => {
     window.scroll({top: 0, left: 0, behavior: 'smooth'});
