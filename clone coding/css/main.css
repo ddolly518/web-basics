@@ -1,18 +1,19 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
     background-color: white;
-    width: 100%;
+    width: 1920px;
     height: 100%;
+    margin: 0 auto;
 }
 .wrapper {
-    width: 100%;
+    width: 1920px;
     margin: 0 auto;
     position: relative;
 }
 header {
     background: black;
     height: 120px;
-    width: 100%;
+    width: 1920px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -24,7 +25,7 @@ header>.wrapper {
 /* Hamburger menu */
 header .header-primary {
     background-color: #0B9BC9;
-    width: 100%;
+    width: 1920px;
     height: 60px;
     position:fixed;;
     display: flex;
@@ -34,7 +35,7 @@ header .header-primary {
 }
 header .header-secondary {
     background-color: white;
-    width: 100%;
+    width: 1920px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -162,7 +163,7 @@ header .header-primary .search .material-icons {
     animation: float 6s ease infinite;
 }
 footer {
-    background-color: pink;
+    background-color: rgb(247, 247, 247);
     width: 100%;
     height: bottom;
     position: absolute;
@@ -254,6 +255,10 @@ footer .footer-primary .f-left li {
     padding: 0 12px;
     border-right: 1px solid #ddd;
 }
+footer .footer-primary .f-left li:first-child {
+    font-size: 13px;
+    color: #405985;
+}
 footer .footer-primary .f-right {
     position: absolute;
     right: 20px;
@@ -263,4 +268,58 @@ footer .footer-primary .f-right {
 footer .footer-primary .f-right img {
     width: 56px;
     height: 40px;
+}
+section .Layout {
+    overflow: hidden;
+}
+aside#left {
+    width: 200px;
+    height: 800px;
+    float: left;
+    background: white;
+}
+aside#right {
+    width: 200px;
+    height: 800px;
+    float: right;
+    background: white;
+}
+main {
+    width: 1520px;
+    height: 800px;
+    float: left;
+    background: white;
+}
+main #banner {
+    width: 1520px;
+    height: 226px;
+    background: white;
+}
+main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;
+    background-color: white;
+    padding: 1px;
+    margin: 0 150px;
+}
+.grid-container> div {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+main .grid-container .item2 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 3;
+}
+main .grid-container .item5 {
+    background-color:#18407D;
+    color: #D1FFFF;
+}
+main .grid-container .item5 .text {
+    font-size: 17px;
+}
+main .grid-container .item5 .info {
+    font-size: 13px;
 }
