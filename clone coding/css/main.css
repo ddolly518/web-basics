@@ -160,7 +160,6 @@ header .header-primary .search .material-icons {
     right: calc((100% - 1100px)/2 - 100px);
     cursor: pointer;
     animation: float 6s ease infinite;
-    z-index: 100;
 }
 footer {
     background-color: pink;
@@ -170,10 +169,10 @@ footer {
     bottom: 0;
     text-align: center;
     border-top: 3px solid #333;
-    z-index: 1;
 }
 footer .footer-secondary {
     position: relative;
+    display: flex;
 }
 footer .footer-secondary ul.main {
     position: relative;
@@ -203,7 +202,7 @@ footer .footer-secondary ul.main li.item .item-title:hover {
 footer .footer-secondary ul.main li.item .item-title:hover .material-icons {
     color: white;
 }
-footer .footer-secondary ul.main li.item .item-title .item-name span {
+footer .footer-secondary ul.main li.item .item-title .item-name {
     font-size: 13px;
     line-height: 14px;
     padding: 5px 0;
@@ -216,17 +215,20 @@ footer .footer-secondary ul.main li.item .item-title .material-icons {
     right: 5px;
     color: black;
 }
-/* footer .footer-secondary ul.main li.item .item-contents {
+footer .footer-secondary ul.main li.item .item-contents {
     position: absolute;
     bottom: 55px;
-    color: black;
-    background-color: purple;
+    color: #0B9BC9;
+    background: white;
     width: 100%;
     font-size: 16px;
     font-weight: 300;
     box-sizing: border-box;
     display: none;
-} */
+}
+footer .footer-secondary ul.main li.item:hover .item-contents {
+    display: block;
+}
 footer .footer-secondary ul.main li.item .item-contents>ul li {
     padding: 5px 5px;
     transition: .4s;
@@ -261,5 +263,4 @@ footer .footer-primary .f-right {
 footer .footer-primary .f-right img {
     width: 56px;
     height: 40px;
-    z-index: 10;
 }
