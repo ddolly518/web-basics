@@ -4,6 +4,11 @@ body{
     width: 1920px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+}
+.main-content {
+    flex: 1;
 }
 .wrapper {
     width: 1920px;
@@ -57,7 +62,7 @@ nav {
     position: absolute;
     top: 120px;
     width: 300px;
-    height: calc(100vh - 60px);
+    height: 1480px;
     background-color:#0B9BC9;
     transform: translateX(-100%);
     transition: .4s;
@@ -165,9 +170,6 @@ header .header-primary .search .material-icons {
 footer {
     background-color: rgb(247, 247, 247);
     width: 100%;
-    height: bottom;
-    position: absolute;
-    bottom: 0;
     text-align: center;
     border-top: 3px solid #333;
 }
@@ -274,33 +276,41 @@ section .Layout {
 }
 aside#left {
     width: 200px;
-    height: 800px;
+    height: 1360px;
     float: left;
     background: white;
 }
 aside#right {
     width: 200px;
-    height: 800px;
+    height: 1360px;
     float: right;
     background: white;
 }
 main {
     width: 1520px;
-    height: 800px;
+    height: 600px;
     float: left;
     background: white;
 }
 main #banner {
     width: 1520px;
-    height: 226px;
+    height: 85px;
+    margin-top: 140px;
     background: white;
+    margin-bottom: 20px;
+}
+main #banner img {
+    width: 1180px;
+    height: 84px;
+    margin-left: 170px;
 }
 main .grid-container {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: 480px 350px 350px;
+    grid-template-rows: 180px 250px 180px 200px;
     gap: 10px;
-    background-color: white;
-    padding: 1px;
+    background-color: #cccc;
+    padding: 10px;
     margin: 0 150px;
 }
 .grid-container> div {
@@ -323,3 +333,141 @@ main .grid-container .item5 .text {
 main .grid-container .item5 .info {
     font-size: 13px;
 }
+main .grid-container .item6 h3 {
+    color: #145663;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+main .grid-container .item6 .more{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #009fd1;
+    color: #fff;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+
+/* MAIN SLIDER*/
+main #about{
+    height: 100vh;
+    position: relative;
+}
+main .wrapper {
+    justify-content: center;
+    top: 50px;
+    width: 1220px;
+    margin: 0 350px;
+}
+
+main .wrapper #slider {
+    width: 1220px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+main .wrapper #slider .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .wrapper #slider .slide1 {
+    background-image: url(../images/slide\ image.jpg);
+}
+
+main .wrapper #slider .slide2 {
+    background-image: url(../images/slide\ image2.jpg);
+}
+
+main .wrapper #slider .slide3 {
+    background-image: url(../images/slide\ image3.jpg);
+}
+
+main .wrapper #slider .slide4 {
+    background-image: url(../images/slide\ image4.jpg);
+}
+
+main .wrapper #slider .slide5 {
+    background-image: url(../images/slide\ image5.jpg);
+}
+
+main .wrapper #slider .slide6 {
+    background-image: url(../images/slide\ image6.png);
+}
+
+main .wrapper #slider .slide-content {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper #slider .slide-content span {
+    font-size: 80px;
+    color: #F6F5F0;
+}
+
+/* SLIDER ARROW */
+
+main .wrapper #slider .material-icons-outlined {
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    font-size: 80px;
+    color: #F6F5F0;
+}
+
+main .wrapper #slider .arrows {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+}
+
+main .wrapper #slider .arrow-left {
+    left: 0px;
+}
+
+main .wrapper #slider .arrow-right {
+    right: 0px;
+}
+
+/* SLIDER DOTS */
+
+main .wrapper #slider .dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper #slider .dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #F6F5F0;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+main .wrapper #slider .dots .dot1 {
+    background: #1107ff;
+} 

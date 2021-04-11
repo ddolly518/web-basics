@@ -65,94 +65,168 @@
             </div>
         </div>
     </header>
-    <nav id="side-menu"></nav>
-    <!-- SCROLL TO TOP -->
-    <img class="btn-scrollToTop" onclick="scrollToTop()" src="./images/scroll.PNG" alt="화살표">
-    <!-- LAYOUT -->
-    <section class="Layout">
-        <aside id="left"></aside>
-        <main>
-            <div id="banner"></div>
-            <div class="grid-container">
-                <div class="item1">1</div>
-                <div class="item2">2</div>
-                <div class="item3">3</div>
-                <div class="item4">4</div>
-                <div class="item5"><span class="text">#지금 우리는<br>#힘내라 대한민국<br>#우리는 할 수 있습니다<br>#코로나19물렀거라!</span><span class="info">국민을 응원하는 영상을 선별하여 게재합니다.</span></div>
-                <div class="item6">
-                    <h3>뉴스 & 이슈<a href="http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&brdGubun=" class="more">더보기</a></h3>
-                    <h4 class="title1">최신 브리핑</h4>
-                    <ul class="title-list">
-                        <li>
-                            <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202">수도권 등 2단계 지역은 유흥시설 집합금지</a>
-                        </li>
-                        <li>
-                            <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164">87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
-                        </li>
-                    </ul>
-                    <h4 class="title2">핫이슈</h4>
-                    <ul class="title-list">
-                        <li>
-                            <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
-                        </li>
-                        <li>
-                            <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
-                        </li>
-                    </ul>
+    <div class="mian-content">
+        <nav id="side-menu"></nav>
+        <!-- SCROLL TO TOP -->
+        <img class="btn-scrollToTop" onclick="scrollToTop()" src="./images/scroll.PNG" alt="화살표">
+        <!-- LAYOUT -->
+        <section class="Layout">
+            <aside id="left"></aside>
+            <main>
+                <div id="banner">
+                    <img src="./images/banner.png">
                 </div>
-                <div class="item7">
-                    <h3>코로나19 팩트체크<a href="http://ncov.mohw.go.kr/factBoardList.do?brdId=3&brdGubun=33" class="more">더보기</a></h3>
-                    <ul class="title-list">
-                        <li>
-                            <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467">[팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
-                        </li>
-                        <li>
-                            <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466">[팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
-                        </li>
-                    </ul>
+                <div class="grid-container">
+                    <div class="item1">
+                        <div class="datalist">
+                            <ul>
+                                <li><h3>일일 집계현황</h3></li>
+                                <li>
+                                    <span class="subtit">국내발생</span>
+                                    <span class="data">594</span>
+                                </li>
+                                <li>
+                                    <span class="subtit">해외유입</span>
+                                    <span class="data">20</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="liveNum">
+                            <ul>
+                                <li><h3>실시간 집계현황</h3></li>
+                                <li>
+                                    <span class="tit">확진환자</span>
+                                    <span class="num">109,558</span>
+                                    <span class="before">전일대비 (+ 614)</span>
+                                </li>
+                                <li>
+                                    <em class="sign">=</em>
+                                    <span class="tit">격리해제</span>
+                                    <span class="num">100,109</span>
+                                    <span class="before">(+ 808)</span>
+                                </li>
+                                <li>
+                                    <em class="sign">+</em>
+                                    <span class="tit">치료 중</span>
+                                    <span class="num">7,682</span>
+                                    <span class="before">(- 197)</span>
+                                </li>
+                                <li>
+                                    <em class="sign">+</em>
+                                    <span class="tit">사망</span>
+                                    <span class="num">1,768</span>
+                                    <span class="before">(+ 3)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <img src="./images/graph.PNG">
+                    </div>
+                    <div class="item3">
+                        <h3>검사현황</h3>
+                        <ul class="info-core">
+                            <li>
+                                <span class="tit">누적 검사수</span>
+                                <span class="num">8,129,532 건</span>
+                            </li>
+                            <li>
+                                <span class="tit">누적 검사완료수</span>
+                                <span class="num">8,037,623 건</span>
+                            </li>
+                            <li>
+                                <span class="tit">누적 확진율</span>
+                                <span class="num">1.4 %</span>
+                            </li>
+                            <li>
+                                <span class="core">(결과양성 / 총 검사완류수 * 100%)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item4">
+                        <h3>일별 확진환자 발생 및 완치 추세</h3>
+                        <div class="complete-day">
+                            <i></i><span>완치(일)</span>
+                        </div>
+                        <div class="confirm-day">
+                            <i></i><span>확진(일)</span>
+                        </div>
+                    </div>
+                    <div class="item5"><span class="text">#지금 우리는<br>#힘내라 대한민국<br>#우리는 할 수 있습니다<br>#코로나19물렀거라!</span><span class="info">국민을 응원하는 영상을 선별하여 게재합니다.</span></div>
+                    <div class="item6">
+                        <h3>뉴스 & 이슈<a href="http://ncov.mohw.go.kr/tcmBoardList.do?brdId=3&brdGubun=" class="more">더보기</a></h3>
+                        <h4 class="title1">최신 브리핑</h4>
+                        <ul class="title-list">
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202">수도권 등 2단계 지역은 유흥시설 집합금지</a>
+                            </li>
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164">87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
+                            </li>
+                        </ul>
+                        <h4 class="title2">핫이슈</h4>
+                        <ul class="title-list">
+                            <li>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
+                            </li>
+                            <li>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item7">
+                        <h3>코로나19 팩트체크<a href="http://ncov.mohw.go.kr/factBoardList.do?brdId=3&brdGubun=33" class="more">더보기</a></h3>
+                        <ul class="title-list">
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467">[팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
+                            </li>
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466">[팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <aside id="right"></aside>
-    </section>
-    <!-- SLIDER -->
+            </main>
+            <aside id="right"></aside>
+        </section>
+    </div>
     <main id="about">
-        <div class="slider">
+        <div class="wrapper">
             <div id="slider">
-                <div class="material-icons">
+                <div class="material-icons-outlined arrow-left">
                     arrow_left
                 </div>
                 <div class="slide slide1">
                     <div class="slide-content">
-                        <span>I1</span>
+                        <span>1</span>
                     </div>
                 </div>
-                <div class="slide slide2">
+                <div class="slide slide12">
                     <div class="slide-content">
-                        <span>I2</span>
+                        <span>2</span>
                     </div>
                 </div>
                 <div class="slide slide3">
                     <div class="slide-content">
-                        <span>I3</span>
+                        <span>3</span>
                     </div>
                 </div>
                 <div class="slide slide4">
                     <div class="slide-content">
-                        <span>I4</span>
+                        <span>4</span>
                     </div>
                 </div>
                 <div class="slide slide5">
                     <div class="slide-content">
-                        <span>I5</span>
+                        <span>5</span>
                     </div>
                 </div>
                 <div class="slide slide6">
                     <div class="slide-content">
-                        <span>I6</span>
+                        <span>6</span>
                     </div>
                 </div>
-                <div class="material-icons">
+                <div class="material-icons-outlined arrow-right">
                     arrow_right
                 </div>
                 <div class="dots">
