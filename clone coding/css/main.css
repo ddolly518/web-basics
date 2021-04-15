@@ -1,38 +1,38 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
     background-color: white;
-    width: 1920px;
+    width: 1903px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction:column;
+    background-color: #EEEFEF;
 }
 .main-content {
     flex: 1;
 }
 .wrapper {
-    width: 1920px;
+    width: 1903px;
     margin: 0 auto;
-    position: relative;
 }
 header {
     background: black;
     height: 120px;
-    width: 1920px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 50;
 }
 header>.wrapper {
-    /* display: flex; */
     flex-direction: column;
 }
 /* Hamburger menu */
 header .header-primary {
     background-color: #0B9BC9;
-    width: 1920px;
+    width: 1903px;
     height: 60px;
-    position:fixed;;
+    position:fixed;
     display: flex;
     align-items: center;
     padding: 20px 15px;
@@ -40,7 +40,7 @@ header .header-primary {
 }
 header .header-secondary {
     background-color: white;
-    width: 1920px;
+    width: 1903px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -101,7 +101,7 @@ header .header-primary .shim li img {
 }
 header .header-primary .sns {
     position: absolute;
-    right: 266px;
+    right: 296px;
 }
 header .header-primary .sns li {
     float:left;
@@ -114,7 +114,7 @@ header .header-primary .sns img {
 }
 header .header-primary .country {
     position: absolute;
-    right: 402px;
+    right: 432px;
 }
 header .header-primary .country li {
     float: left;
@@ -126,7 +126,7 @@ header .header-primary .country a {
     color: #444444;
 }
 header .header-primary .search {
-    right: 10px;
+    right: 40px;
     display: flex;
     align-items: center;
     position: absolute;
@@ -166,6 +166,7 @@ header .header-primary .search .material-icons {
     right: calc((100% - 1100px)/2 - 100px);
     cursor: pointer;
     animation: float 6s ease infinite;
+    z-index: 50;
 }
 footer {
     background-color: rgb(247, 247, 247);
@@ -276,69 +277,145 @@ section .Layout {
 }
 aside#left {
     width: 200px;
-    height: 1360px;
+    height: 1140px;
     float: left;
-    background: white;
+    background-color: #EEEFEF;
 }
 aside#right {
     width: 200px;
-    height: 1360px;
+    height: 1140px;
     float: right;
-    background: white;
+    background-color: #EEEFEF;
 }
 main {
-    width: 1520px;
-    height: 600px;
+    width: 1503px;
+    height: 1140px;
     float: left;
-    background: white;
+    background-color: #EEEFEF;
+    margin: 0 auto;
 }
 main #banner {
-    width: 1520px;
+    width: 1503px;
     height: 85px;
-    margin-top: 140px;
-    background: white;
-    margin-bottom: 20px;
+    background: #EEEFEF;
+    margin: 20px 0;
+    top: 120px;
+    position: relative;
 }
 main #banner img {
     width: 1180px;
     height: 84px;
     margin-left: 170px;
+    border: 1px solid rgba(115,117,149,0.5);
 }
 main .grid-container {
     display: grid;
-    grid-template-columns: 480px 350px 350px;
-    grid-template-rows: 180px 250px 180px 200px;
+    grid-template-columns: 480px 340px 330px;
+    grid-template-rows: 155px 185px 250px 180px;
     gap: 10px;
+    top: 125px;
+    position: relative;
     background-color: #cccc;
     padding: 10px;
-    margin: 0 150px;
+    margin: 0 155px;
 }
 .grid-container> div {
     background-color: white;
-    text-align: center;
     padding: 10px 0;
     font-size: 30px;
+}
+main .grid-container .item1 {
+    display: table-cell;
+}
+main .grid-container .item1 h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
 main .grid-container .item2 {
     grid-column: 2 / span 2;
     grid-row: 1 / span 3;
 }
+main .grid-container .item3 {
+    border-top: 4px solid #164068;
+    background-color: #EAFDFF;
+    padding: 15px 10px 0 10px;
+}
+main .grid-container .item3 h3 {
+    color: #174069;
+    font-size: 15px;
+    padding: 0 16px;
+    font-weight: 600;
+}
+main .grid-container .item3 .info-core li {
+    font-size: 16px;
+    padding: 5px 0;
+    display: inline;
+}
+main .grid-container .item3 .info-core li .tit {
+    color: #666666;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item3 .info-core li .num {
+    color: #174069;
+    font-size: 16px;
+    font-weight: 600;
+}
+main .grid-container .item3 .info-core li .core {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+}
+main .grid-container .item3 img {
+    width: 288px;
+    height: 180px;
+    
+}
+main .grid-container .item4 {
+    border-top: 4px solid #164068;
+    background-color:#E6F6FF;
+    font-size: 16px;
+    padding-top: 7px;
+}
+main .grid-container .item4 h3 {
+    font-size: 15px;
+    color: #174069;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+main .grid-container .item4 img {
+    width: 480px;
+    height: 217px;
+    box-sizing: border-box;
+    padding-top: 7px;
+}
 main .grid-container .item5 {
     background-color:#18407D;
     color: #D1FFFF;
+    padding: 10px;
+    font-size: 16px;
 }
 main .grid-container .item5 .text {
     font-size: 17px;
+    line-height: 25.5px;
 }
 main .grid-container .item5 .info {
+    position: absolute;
     font-size: 13px;
+    left: 24px;
+    bottom: 22px;
+}
+main .grid-container .item6 {
+    border-top: 4px solid #164068;
 }
 main .grid-container .item6 h3 {
     color: #145663;
     font-size: 15px;
     font-weight: 600;
     text-align: center;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 main .grid-container .item6 .more{
     font-size: 12px;
@@ -352,20 +429,104 @@ main .grid-container .item6 .more{
     padding-right: 8px;
     border-radius: 12px;
 }
+main .grid-container .item6 h4 {
+    color: #164068;
+    margin-left: 10px;
+    padding: 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item6 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #222222;
+}
+main .grid-container .item6 li {
+    padding: 2px 0;
+    line-height: 16px;
+}
+/* main .grid-container .item .item6 .title-list {
+    font-size: 16px;
+    padding: 4px 7px;
+    color: #000000;
+} */
+main .grid-container .item7 {
+    border-top: 4px solid #164068;
+}
+main .grid-container .item7 h3 {
+    color: #585041;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+main .grid-container .item7 .more{
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #009fd1;
+    color: #fff;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+main .grid-container .item7 h4 {
+    color: #164068;
+    margin-left: 10px;
+    padding: 0 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+main .grid-container .item7 a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #222222;
+}
+main .grid-container .item7 li {
+    padding: 2px 0;
+    line-height: 16px;
+}
+main .grid-container .item7 .now-banner {
+    position: absolute;
+    right: 13px;
+    bottom: 10px;
+    width: 330px;
+    height: 60px;
+    background: url(../images/bigbanner_backimg.png) no-repeat right bottom #b78146;
+}
+main .grid-container .item7 .now-banner a {
+    padding: 18px 0 7px 10px;
+    cursor: pointer;
+}
+main .grid-container .item7 .now-banner .banner-title {
+    background: url(../images/bigbanner_icon.png) no-repeat 0 center;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
+    box-sizing: border-box;
+}
 
 /* MAIN SLIDER*/
-main #about{
-    height: 100vh;
+#about{
+    height: 600px;
     position: relative;
+    width: 1503px;
+    margin: 0 auto;
+
 }
-main .wrapper {
+#about .wrapper {
+    width: 1503px;
+    height: 500px;
+    display: flex;
     justify-content: center;
-    top: 50px;
-    width: 1220px;
-    margin: 0 350px;
+    margin: 50px 0;
 }
 
-main .wrapper #slider {
+#about .wrapper #slider {
     width: 1220px;
     height: 500px;
     overflow: hidden;
@@ -373,37 +534,37 @@ main .wrapper #slider {
     position: relative;
 }
 
-main .wrapper #slider .slide {
+#about .wrapper #slider .slide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-main .wrapper #slider .slide1 {
+#about .wrapper #slider .slide1 {
     background-image: url(../images/slide\ image.jpg);
 }
 
-main .wrapper #slider .slide2 {
+#about .wrapper #slider .slide2 {
     background-image: url(../images/slide\ image2.jpg);
 }
 
-main .wrapper #slider .slide3 {
+#about .wrapper #slider .slide3 {
     background-image: url(../images/slide\ image3.jpg);
 }
 
-main .wrapper #slider .slide4 {
+#about .wrapper #slider .slide4 {
     background-image: url(../images/slide\ image4.jpg);
 }
 
-main .wrapper #slider .slide5 {
+#about .wrapper #slider .slide5 {
     background-image: url(../images/slide\ image5.jpg);
 }
 
-main .wrapper #slider .slide6 {
+#about .wrapper #slider .slide6 {
     background-image: url(../images/slide\ image6.png);
 }
 
-main .wrapper #slider .slide-content {
+#about .wrapper #slider .slide-content {
     width: 100%;
     height: 120px;
     display: flex;
@@ -412,14 +573,14 @@ main .wrapper #slider .slide-content {
     align-items: center;
 }
 
-main .wrapper #slider .slide-content span {
+#about .wrapper #slider .slide-content span {
     font-size: 80px;
     color: #F6F5F0;
 }
 
 /* SLIDER ARROW */
 
-main .wrapper #slider .material-icons-outlined {
+#about .wrapper #slider .material-icons-outlined {
     justify-content: center;
     position: absolute;
     top: 50%;
@@ -428,7 +589,7 @@ main .wrapper #slider .material-icons-outlined {
     color: #F6F5F0;
 }
 
-main .wrapper #slider .arrows {
+#about .wrapper #slider .arrows {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -437,17 +598,17 @@ main .wrapper #slider .arrows {
     height: 0;
 }
 
-main .wrapper #slider .arrow-left {
+#about .wrapper #slider .arrow-left {
     left: 0px;
 }
 
-main .wrapper #slider .arrow-right {
+#about .wrapper #slider .arrow-right {
     right: 0px;
 }
 
 /* SLIDER DOTS */
 
-main .wrapper #slider .dots {
+#about .wrapper #slider .dots {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -459,7 +620,7 @@ main .wrapper #slider .dots {
     align-items: center;
 }
 
-main .wrapper #slider .dots .dot {
+#about .wrapper #slider .dots .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -468,6 +629,6 @@ main .wrapper #slider .dots .dot {
     cursor: pointer;
 }
 
-main .wrapper #slider .dots .dot1 {
+#about .wrapper #slider .dots .dot1 {
     background: #1107ff;
 } 
