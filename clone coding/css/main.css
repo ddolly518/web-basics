@@ -371,7 +371,7 @@ main .grid-container .item1 .datalist ul li:nth-child(3) {
 main .grid-container .item1 .liveNum {
     position: relative;
     display: table;
-    margin-top: 2px;
+    margin-top: 1px;
     width: 100%;
     box-sizing: border-box;
 }
