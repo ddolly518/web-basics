@@ -66,6 +66,7 @@ nav {
     background-color:#0B9BC9;
     transform: translateX(-100%);
     transition: .4s;
+    z-index: 5;
 }
 header .header-secondary .corona span {
     font-size: 18px;
@@ -301,6 +302,7 @@ main #banner {
     margin: 20px 0;
     top: 120px;
     position: relative;
+    z-index: 1;
 }
 main #banner img {
     width: 1180px;
