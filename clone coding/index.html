@@ -67,7 +67,72 @@
     </header>
     <!-- main -->
     <section class="main-content">
-        <nav id="side-menu"></nav>
+        <nav id="side-menu">
+            <ul>
+                <li>바로알기</li>
+                <li>발생동향</li>
+                <li>뉴스$이슈</li>
+                <li>홍보자료$FAQ</li>
+                <li>피해지원정책</li>
+                <li>공지사항</li>
+                <li>사회적 거리 두기</li>
+                <li>마스크 착용</li>
+            </ul>
+            <ul class="li1">
+                <li>코로나19란?</li>
+                <li>대한민국 방역체계</li>
+                <li>환자치료 및 관리</li>
+                <li>예방 조치 안내</li>
+            </ul>
+            <ul class="li2">
+                <li>국내 발생 현황</li>
+                <li>국외 발생 현황</li>
+                <li>시도별 발생동향</li>
+                <li>확진환자 이동경로</li>
+            </ul>
+            <ul class="li3">
+                <li>보도자료</li>
+                <li>코로나19팩트&이슈체크</li>
+                <li>공적마스크 공급현황</li>
+                <li>일별 브리핑 이슈 모아보기</li>
+            </ul>
+            <ul class="li4">
+                <li>홍보자료</li>
+                <li>FAQ</li>
+            </ul>
+            <ul class="li5">
+                <li>일반인(대국민)</li>
+                <li>취약계층</li>
+                <li>소상공인 및 기업</li>
+                <li>의료기관</li>
+                <li>발생지역</li>
+                <li>기타</li>
+            </ul>
+            <ul class="li6">
+                <li>일반인</li>
+                <li>입국자 및 해외여행객</li>
+                <li>자가격리자</li>
+                <li>의료기관</li>
+                <li>집단 및 다중이용시설</li>
+                <li>지자체</li>
+                <li>기업 및 시장</li>
+                <li>지역별 사회적 거리 두기 단계</li>
+            </ul>
+            <ul class="li7">
+                <li>거리 두기 체계 개요</li>
+                <li>단계별 실행방안</li>
+                <li>주요 시설 활동 조치사항</li>
+                <li>생활 속 거리 두기 기본수칙</li>
+                <li>생활 속 거리 두기 세부지침</li>
+                <li>지역별 거리 두기 단계 현황</li>
+            </ul>
+            <ul class="li8">
+                <li>지침 제도</li>
+                <li>FAQ</li>
+                <li>홍보자료</li>
+                <li>시도별 현황</li>
+            </ul>
+        </nav>
         <!-- SCROLL TO TOP -->
         <img class="btn-scrollToTop" onclick="scrollToTop()" src="./images/scroll.PNG" alt="화살표">
         <!-- LAYOUT -->
@@ -79,21 +144,27 @@
                 </div>
                 <div class="grid-container">
                     <div class="item1">
-                            <div class="datalist">
-                                <ul>
-                                    <li>
-                                        <span class="new-tit">일일확진자</span>
-                                    </li>
-                                    <li>
-                                        <span class="subtit">국내발생</span>
-                                        <span class="data">594</span>
-                                    </li>
-                                    <li>
-                                        <span class="subtit">해외유입</span>
-                                        <span class="data">20</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="container-list1">
+                            <a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">
+                                환자 현황<span class="timedata">(4.18 00시 기준, '20.1.3. 이후 누계)</span>
+                                <span class="more">자세히</span>    
+                            </a>
+                        </div>
+                        <div class="datalist">
+                            <ul>
+                                <li>
+                                    <span class="new-tit">일일확진자</span>
+                                </li>
+                                <li>
+                                    <span class="subtit">국내발생</span>
+                                    <span class="data">594</span>
+                                </li>
+                                <li>
+                                    <span class="subtit">해외유입</span>
+                                    <span class="data">20</span>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="liveNum">
                             <ul>
                                 <li>
@@ -123,7 +194,63 @@
                         </div>
                     </div>
                     <div class="item2">
-                        <img src="./images/graph.PNG">
+                        <div class="container-list2">
+                            <div class="region1">
+                                <span>지역별 거리 두기 단계</span>
+                                <em>04.16.00시 기준</em>
+                            </div>
+                            <div class="region2">
+                                <span>시도별 확진환자 현황</span>
+                                <em>04.18.00시 기준, '20.1.3. 이후 누계</em>
+                            </div>
+                        </div>
+                        <img class="graph" src="./images/graph.PNG">
+                        <div class="graph-detail">
+                            <h3 class="detail-title">전국</h3>
+                            <h4 class="datail-tit1"><span class="circle1"> </span>2단계</h4>
+                            <p>
+                                -수도권 3개 (서울, 인천, 경기)<br>
+                                -충청권 2개 (대전, 괴산)<br>
+                                -호남권 5개 (전주, 완주(이서면), 익산, 순천, 담양)<br>
+                                -경남권 2개 (부산, 울산)
+                            </p>
+                            <h4 class="datail-tit2"><span class="circle2"> </span>1.5단계</h4>
+                            <p>
+                                -충청권 3개 (세종, 충북, 충남)<br>
+                                -호남권 3개 (광주, 전북, 전남)<br>
+                                -경북권 2개 (대구, 경북)<br>
+                                -경남권 1개 (경남)<br>
+                                -강원 1개 (강원)<br>
+                                -제주 1개 (제주)
+                            </p>
+                        </div>
+                        <ul class="graph-banner">
+                            <li>
+                                <a href="https://www.mfds.go.kr/vaccine_covid19.jsp" target="_blank">
+                                    <img src="./images/quick_banner_newico_06.png"><span>코로나19 <em>백신 치료제 정보</em>를 한눈에</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.safetyreport.go.kr/api?apiKey=135200000RIT6SJUZ0TTF3T2FD9" target="_blank">
+                                    <img src="./images/quick_banner_newico_01.png"><span>코로나19 국민제안</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=28">
+                                    <img src="./images/quick_banner_newico_03.png"><span>지자체용 대응지침</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mohw.go.kr/react/popup_200128.html" target="_blank">
+                                    <img src="./images/quick_banner_newico_04.png"><span>선별진료소 국민안심병원<br>호흡기전담클리닉 찾기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=51">
+                                    <img src="./images/quick_banner_newico_05.png"><span>대상별 피해지원 정책</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="item3">
                         <div class="livetest">
@@ -160,19 +287,19 @@
                         <h4 class="title1">최신 브리핑</h4>
                         <ul class="title-list">
                             <li>
-                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202">수도권 등 2단계 지역은 유흥시설 집합금지</a>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365202"><span>·</span>수도권 등 2단계 지역은 유흥시설 집합금지</a>
                             </li>
                             <li>
-                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164">87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
+                                <a href="http://ncov.mohw.go.kr/tcmBoardView.do?contSeq=365164"><span>·</span>87일 만에 지역사회 감염 600명대, 4차 유행의 갈림길</a>
                             </li>
                         </ul>
                         <h4 class="title2">핫이슈</h4>
                         <ul class="title-list">
                             <li>
-                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886057&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span>정부, 현행 거리두기 단계 .5인 이상 모임 금지 3주간 연장</a>
                             </li>
                             <li>
-                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank">일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
+                                <a href="https://www.korea.kr/special/policyFocusView.do?newsId=148886038&pageIndex=1&pkgId=49500742&pkgSubId=&pkgSubs=&exceptNewsId=&cardYn=&cateId=&cateIds=&sectId=&se" target="_blank"><span>·</span>일시 보류된 'AZ백신 접종 재게' 여부, 이번 주말 발표</a>
                             </li>
                         </ul>
                     </div>
@@ -180,10 +307,10 @@
                         <h3>코로나19 팩트체크<a href="http://ncov.mohw.go.kr/factBoardList.do?brdId=3&brdGubun=33" class="more">더보기</a></h3>
                         <ul class="title-list">
                             <li>
-                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467">[팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3467"><span>·</span>[팩트체크] 사회적 거리 두기 3단계 추진 중? 사실이 아닙니다</a>
                             </li>
                             <li>
-                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466">[팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
+                                <a href="http://ncov.mohw.go.kr/searchBoardView.do?brdId=3&brdGubun=33&dataGubun=331&ncvContSeq=3466"><span>·</span>[팩트체크] 진단검사량이나 검사결과는 인위적인 조작이 불가능합니다</a>
                             </li>
                         </ul>
                         <div class="now-banner">
@@ -197,52 +324,15 @@
     </section>
     <section id="about">
         <div class="wrapper">
-            <div id="slider">
-                <!-- <div class="material-icons-outlined arrow-left">
-                    arrow_left
-                </div> -->
-                <div class="slide slide1">
-                    <div class="slide-content">
-                        <span>1</span>
-                    </div>
-                </div>
-                <div class="slide slide12">
-                    <div class="slide-content">
-                        <span>2</span>
-                    </div>
-                </div>
-                <div class="slide slide3">
-                    <div class="slide-content">
-                        <span>3</span>
-                    </div>
-                </div>
-                <div class="slide slide4">
-                    <div class="slide-content">
-                        <span>4</span>
-                    </div>
-                </div>
-                <div class="slide slide5">
-                    <div class="slide-content">
-                        <span>5</span>
-                    </div>
-                </div>
-                <div class="slide slide6">
-                    <div class="slide-content">
-                        <span>6</span>
-                    </div>
-                </div>
-                <!-- <div class="material-icons-outlined arrow-right">
-                    arrow_right
-                </div> -->
-                <div class="dots">
-                    <div class="dot dot1"></div>
-                    <div class="dot dot2"></div>
-                    <div class="dot dot3"></div>
-                    <div class="dot dot4"></div>
-                    <div class="dot dot5"></div>
-                    <div class="dot dot6"></div>
-                </div>
-            </div>
+            <!-- slider 위치라도 잡아보기 -->
+            <ul class="slider">
+                <li><img src="./images/slide image.jpg"></li>
+                <li><img src="./images/slide image2.jpg"></li>
+                <li><img src="./images/slide image3.jpg"></li>
+                <li><img src="./images/slide image4.jpg"></li>
+                <li><img src="./images/slide image5.jpg"></li>
+                <li><img src="./images/slide image6.png"></li>
+            </ul>
         </div>
     </section>
     <!-- footer -->
