@@ -63,7 +63,7 @@ nav {
     position: absolute;
     top: 120px;
     width: 300px;
-    height: 1450px;
+    height: 1340px;
     background-color:#0B9BC9;
     transform: translateX(-100%);
     transition: .4s;
@@ -80,7 +80,7 @@ nav .side-menu .item .nav-name {
     transition: .4s;
     background: #0B9BC9;
     color: white;
-    margin: 10px 0;
+    margin: 5px 0;
     margin-left: 10px;
 }
 nav .side-menu .item .nav-contents {
@@ -356,12 +356,12 @@ main .grid-container {
     gap: 10px;
     top: 125px;
     position: relative;
-    background-color: #cccc;
+    background-color: #EEEFEF;
     padding: 10px;
     margin: 0 155px;
 }
 .grid-container> div {
-    background-color: white;
+    background-color: #EEEFEF;
     font-size: 30px;
 }
 /* item1 */
@@ -862,8 +862,11 @@ main .grid-container .item7 .now-banner .banner-title {
     box-sizing: border-box;
 }
 /* MAIN SLIDER*/
+#about {
+    background: white;
+}
 #about .wrapper {
-    height: 310px;
+    height: 200px;
     position: relative;
     width: 1180px;
     margin: 0 auto;
@@ -880,4 +883,5 @@ main .grid-container .item7 .now-banner .banner-title {
 #about .wrapper ul li img {
     width: 274px;
     height: 154px;
+    margin-right: 17px;
 }
